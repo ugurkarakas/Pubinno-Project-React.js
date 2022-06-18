@@ -1,0 +1,51 @@
+.main{
+    @apply grid w-[100%];
+    grid-template-columns: repeat(1, 250px auto);
+    
+    .content{
+        @apply px-[20px];
+    }
+    .content-head-partial{
+        @apply py-[20px] flex items-center justify-between;
+
+        h1{
+            @apply text-[30px] font-semibold;
+        }
+        button{
+            @apply flex items-center gap-[10px] font-semibold bg-[#c33042] h-[36px] text-white px-[22px] rounded;
+           
+          i{
+                @apply font-medium text-[24px];
+           }
+        }
+
+        .process-partial{
+            @apply flex gap-[20px];
+
+            input{
+               border: 1px solid rgb(221, 221, 221);
+               border-radius: 8px;
+               width: 170px;
+               @apply py-[6px] px-[14px];
+            }
+        }
+    }
+}
+.action{
+    cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+    .main{
+        grid-template-columns: repeat(1, auto);
+    }
+    .sidebar{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .process-partial{
+        input{
+            width: 100px;
+        }
+    }
+}

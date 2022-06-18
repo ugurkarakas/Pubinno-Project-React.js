@@ -1,0 +1,45 @@
+.saveButton{
+    @apply py-[8px] px-[30px] bg-[#c33042] rounded text-white transition-[1s];
+}
+.saveButton:hover{
+    @apply bg-[#8b1321];
+}
+.modal-head{
+    @apply px-[26px] py-[20px] flex justify-between items-center;
+    
+    h3{
+        @apply text-[20px] font-semibold;
+    }
+    i{
+        @apply cursor-pointer text-[20px];
+    }
+}
+.form-head{
+    h2{
+    @apply flex justify-center text-[18px] font-semibold w-[100px] cursor-pointer;
+    border-bottom: 1px solid #8b1321;
+    line-height: 40px;
+    }
+}
+.form-content{
+    @apply flex flex-col gap-[20px] mt-[20px];
+
+    input{
+        @apply p-[18px] bg-[#eeeeee] rounded;
+        border: 1px solid rgba(0, 0, 0, 0.336);
+    }
+    input::placeholder { 
+        color: rgb(63, 63, 63);
+      }
+    input:focus{
+        @apply bg-white;
+    }
+}
+.form-content{
+    width: 525px;
+}
+
+.form-footer{
+    @apply flex justify-end w-[100%];
+    padding: 0px 22px 20px 0px;
+}

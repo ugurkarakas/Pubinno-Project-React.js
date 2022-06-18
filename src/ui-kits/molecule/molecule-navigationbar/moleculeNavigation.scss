@@ -1,0 +1,13 @@
+.content-navigation{
+    @apply py-[20px] flex gap-[20px];
+
+    h4{
+       @apply font-normal transition-[1s];
+    }
+    h4:hover{
+      @apply text-[#c33042] cursor-pointer;
+    }
+    h4:nth-child(1){
+        @apply text-[#c33042];
+    }
+}

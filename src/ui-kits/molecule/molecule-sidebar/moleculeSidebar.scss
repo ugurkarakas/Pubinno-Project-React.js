@@ -1,0 +1,18 @@
+.sidebar{
+    @apply py-[60px] px-[26px] w-[auto] h-[auto];
+    box-shadow: 5px 0 5px -2px #888;
+
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    .menu-item{
+        @apply flex items-center gap-[10px] text-[#767676] transition-[1s];
+
+    }
+    .menu-item:hover{
+        @apply text-[#c33042] cursor-pointer;
+    }
+    .menu-item:last-child{
+        @apply text-[#c33042];
+    }
+}
